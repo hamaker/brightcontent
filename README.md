@@ -15,8 +15,7 @@ Brightcontent, yet another rails CMS / admin panel
 * No standard 'cms-modules', we hate those, making custom is easy enough
 * Build in the rails way, use your normals models, only controllers and views are provided
 * Only exception: Page model is provided with tree structure, sorting, hidden and pretty urls like `/services/cleaning/houses`
-* Rails 3.2+ only
-* Strong Parameters support
+* Rails 4.0+ 
 
 Installation
 ------------
@@ -25,6 +24,7 @@ Include the gem in your Gemfile:
 
 ```ruby
 gem "brightcontent"
+gem "jquery-ui-rails" # TODO: needs looking into why this should be added to Gemfile
 bundle install
 ```
 
