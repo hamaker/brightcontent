@@ -10,12 +10,12 @@ module Brightcontent
     include DefaultActions
     include Pagination
 
+    protected
+
     def permitted_params
       params.permit!
     end
-
-    protected
-
+    
     def list_fields
       default_fields - %w{attachments}
     end
